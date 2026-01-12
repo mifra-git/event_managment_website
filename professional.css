@@ -1,0 +1,354 @@
+
+/* Reset & global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    background: #f4f7f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form container */
+.form-container {
+    background: #fff;
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+/* Login Button Styling */
+.login-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.form-container h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+/* Input fields */
+form input {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+    border-color: #0056d2;
+    box-shadow: 0 0 8px rgba(0,86,210,0.2);
+    outline: none;
+}
+
+/* Button */
+form button {
+    width: 100%;
+    padding: 14px;
+    background: #0056d2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background: #003d9a;
+    transform: translateY(-2px);
+}
+
+/* Footer / switch link */
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.form-footer a {
+    color: #0056d2;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Error & success messages */
+.error-msg {
+    background: #ffe6e6;
+    color: #d8000c;
+    border-left: 5px solid #d8000c;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.success-msg {
+    background: #e6ffe6;
+    color: #228B22;
+    border-left: 5px solid #228B22;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Responsive */
+@media(max-width: 480px){
+    .form-container{
+        padding: 30px 20px;
+    }
+    form input, form button{
+        font-size: 15px;
+    }
+}
+
+
+/* MESSAGES */
+.error {
+  background: #ffe6e6;
+  color: #d8000c;
+  border-left: 5px solid #d8000c;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.success {
+  background: #e6ffe6;
+  color: #228B22;
+  border-left: 5px solid #228B22;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* FOOTER LINK */
+.switch, .form-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.switch a, .form-footer a {
+  color: #0056d2;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .form-container {
+    margin: 40px 15px;
+    padding: 30px 20px;
+  }
+}
+/* Reset & global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f7f9;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Container */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Header */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.dashboard-header h2 {
+    font-size: 28px;
+    color: #0056d2;
+}
+
+.dashboard-header a.logout-btn {
+    background: #e74c3c;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.dashboard-header a.logout-btn:hover {
+    background: #c0392b;
+}
+
+/* Cards / info sections */
+.dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 250px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0056d2;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Table for events or registrations */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table th {
+    background: #0056d2;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background: #f4f7f9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-cards {
+        flex-direction: column;
+    }
+}
+
+/* Reset & global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f4f7f9;
+    color: #333;
+}
+
+/* Container for logout message */
+.logout-container {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+/* Navbar Login Button */
+.login-btn {
+    background-color: #0056d2;  /* Dark blue, matching your forms */
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #003d9a; /* Slightly darker blue on hover */
+    transform: translateY(-2px);
+}
+
+.logout-container h2 {
+    color: #e74c3c;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.logout-container p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* Redirect / login button */
+.logout-container a {
+    display: inline-block;
+    text-decoration: none;
+    background: #0056d2;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.logout-container a:hover {
+    background: #003d9a;
+    transform: translateY(-2px);
+}
